@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.9",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "spectacle-scripts": "2.3.0"
