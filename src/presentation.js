@@ -53,22 +53,37 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={2} textColor="primary" caps margin="0 0 24px 0">
-            Made with ❤️ and
+            Made with{" "}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{" "}
+            and
           </Heading>
           <StyledLink
             textSize={64}
             href="https://formidable.com/open-source/spectacle/"
           >
-            ✨ spectacle,{" "}
+            <span role="img" aria-label="stars">
+              ✨
+            </span>{" "}
+            spectacle,{" "}
           </StyledLink>
           <StyledLink textSize={64} href="https://firebase.google.com/">
-            🛫 netlify,{" "}
+            <span role="img" aria-label="plane taking off">
+              🛫
+            </span>{" "}
+            netlify,{" "}
           </StyledLink>
           <StyledLink
             textSize={64}
             href="https://facebook.github.io/create-react-app/"
           >
-            and 🖥&nbsp;create-react-app
+            and
+            <span role="img" aria-label="computer">
+              {" "}
+              🖥
+            </span>
+            &nbsp;create-react-app
           </StyledLink>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
@@ -76,14 +91,37 @@ export default class Presentation extends React.Component {
             Story Time
           </Heading>
           <Text textColor="tertiary" margin="24px 0 0">
-            Who is me? 👨🏻‍💻
+            Who is me?
+            <span role="img" aria-label="person on computer">
+              {" "}
+              👨🏻‍💻
+            </span>
           </Text>
         </Slide>
         <Slide>
           <List textColor="secondary" textAlign="center">
-            <DotLessItem>🐻 Half Muscogee / 🍁 Half Canadian </DotLessItem>
-            <DotLessItem>💻 FE Software Engineer at SimSpace</DotLessItem>
-            <DotLessItem>✨ Open Source Contributor</DotLessItem>
+            <DotLessItem>
+              <span role="img" aria-label="bear">
+                🐻
+              </span>{" "}
+              Half Muscogee /{" "}
+              <span role="img" aria-label="maple leaf">
+                🍁
+              </span>{" "}
+              Half Canadian{" "}
+            </DotLessItem>
+            <DotLessItem>
+              <span role="img" aria-label="computer">
+                💻
+              </span>{" "}
+              FE Software Engineer at SimSpace
+            </DotLessItem>
+            <DotLessItem>
+              <span role="img" aria-label="stars">
+                ✨
+              </span>{" "}
+              Open Source Contributor
+            </DotLessItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
@@ -91,21 +129,41 @@ export default class Presentation extends React.Component {
             Open Source Technology
           </Heading>
           <List>
-            <DotLessItem>✊ Giving rights to users</DotLessItem>
-            <DotLessItem>📈 Linux has over 12,000 contributors</DotLessItem>
             <DotLessItem>
-              ☁ GitHub hosts over 100,000,000 repositories
+              <span role="img" aria-label="fist">
+                ✊
+              </span>{" "}
+              Giving rights to users
+            </DotLessItem>
+            <DotLessItem>
+              <span role="img" aria-label="chart">
+                📈
+              </span>{" "}
+              Linux has over 12,000 contributors
+            </DotLessItem>
+            <DotLessItem>
+              <span role="img" aria-label="cloud">
+                ☁
+              </span>{" "}
+              GitHub hosts over 100,000,000 repositories
             </DotLessItem>
           </List>
         </Slide>
         <Slide>
           <Heading size={1}>Story Time</Heading>
-          <Text margin="24px 0 0">How did I start coding? 👨🏻‍💻</Text>
+          <Text margin="24px 0 0">
+            How did I start coding?
+            <span role="img" aria-label="person on computer">
+              {" "}
+              👨🏻‍💻
+            </span>
+          </Text>
         </Slide>
         <Slide>
           <img
             height={400}
             width="auto"
+            alt="kermit the frog typing"
             src="https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif"
           />
         </Slide>
@@ -115,28 +173,50 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <DotLessItem>
-              <StyledLink href="https://reactjs.org/" textColor="tertiary">
-                ⛱ React
+              <StyledLink
+                href="https://reactjs.org/"
+                textColor="tertiary"
+                style={{ color: "#4DD1DC" }}
+              >
+                <span role="img" aria-label="beach umbrella">
+                  ⛱
+                </span>{" "}
+                React
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink
                 href="https://reasonml.github.io/"
                 textColor="tertiary"
+                style={{ color: "#4DD1DC" }}
               >
-                🧩 ReasonML
+                <span role="img" aria-label="puzzle piece">
+                  🧩
+                </span>{" "}
+                ReasonML
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
-              <StyledLink href="https://www.netlify.com/" textColor="tertiary">
-                🛫 Netlify
+              <StyledLink
+                href="https://www.netlify.com/"
+                textColor="tertiary"
+                style={{ color: "#4DD1DC" }}
+              >
+                <span role="img" aria-label="plane take off">
+                  🛫
+                </span>{" "}
+                Netlify
               </StyledLink>
             </DotLessItem>
           </List>
         </Slide>
         <Slide>
           <Heading size={3} textColor="tertiary">
-            What is Natives in Tech? 🤔
+            What is Natives in Tech?
+            <span role="img" aria-label="thinking face">
+              {" "}
+              🤔
+            </span>
           </Heading>
           <Text
             textColor="secondary"
@@ -145,13 +225,16 @@ export default class Presentation extends React.Component {
           >
             Natives in Tech is a coalition of Native and non-Native developers
             building Native-centric applications using open source technologies
-            👩🏽‍💻👨🏻‍💻👩🏼‍💻👨🏾‍💻
+            <span role="img" aria-label="people on computers">
+              👩🏽‍💻👨🏻‍💻👩🏼‍💻👨🏾‍💻
+            </span>
           </Text>
         </Slide>
         <Slide>
           <img
             height={400}
             width="auto"
+            alt="mind blown"
             src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"
           />
         </Slide>
@@ -160,32 +243,50 @@ export default class Presentation extends React.Component {
           <List>
             <DotLessItem>
               <StyledLink href="http://obxlabs.net/olelo-programming/">
-                🍍 Re-writing C# in Hawaiian
+                <span role="img" aria-label="pineapple">
+                  🍍
+                </span>{" "}
+                Re-writing C# in Hawaiian
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://native-land.ca/">
-                🗺 Mapping traditional native territories
+                <span role="img" aria-label="map">
+                  🗺
+                </span>{" "}
+                Mapping traditional native territories
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="http://turing.iimas.unam.mx/wix/">
-                🤖 Native language translation using machine learning
+                <span role="img" aria-label="robot">
+                  🤖
+                </span>{" "}
+                Native language translation using machine learning
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://www.lavieencode.net/">
-                👩🏽‍🏫 Web development training
+                <span role="img" aria-label="lady on computer">
+                  👩🏽‍🏫
+                </span>{" "}
+                Web development training
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://www.amazonteam.org/terrastories/">
-                🌴 Amazonian story telling through offline maps
+                <span role="img" aria-label="palm tree">
+                  🌴
+                </span>{" "}
+                Amazonian story telling through offline maps
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://nativeamericanmascotdatabase.com/database/">
-                👺 Mascot database
+                <span role="img" aria-label="mask">
+                  👺
+                </span>{" "}
+                Mascot database
               </StyledLink>
             </DotLessItem>
           </List>
@@ -199,33 +300,56 @@ export default class Presentation extends React.Component {
             textColor="secondary"
             style={{ lineHeight: 1.5 }}
           >
-            Taking something from the outside world and making it our own 🙌
+            Taking something from the outside world and making it our own
+            <span role="img" aria-label="hands raised">
+              {" "}
+              🙌
+            </span>
           </Text>
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={3} textColor="primary">
-            Let's Stay Connected 🤝
+            Let's Stay Connected
+            <span role="img" aria-label="handshake">
+              {" "}
+              🤝
+            </span>
           </Heading>
           <List textAlign="center">
             <DotLessItem>
-              <StyledLink textColor="primary" href="https://nativesintech.org/">
-                🌍 NativesInTech.org
+              <StyledLink
+                textColor="primary"
+                href="https://nativesintech.org/"
+                style={{ color: "#FFF" }}
+              >
+                <span role="img" aria-label="globe">
+                  🌍
+                </span>{" "}
+                NativesInTech.org
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink
                 textColor="primary"
                 href="https://twitter.com/nativesintech"
+                style={{ color: "#FFF" }}
               >
-                🐦 Twitter
+                <span role="img" aria-label="bird">
+                  🐦
+                </span>{" "}
+                Twitter
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink
                 textColor="primary"
                 href="https://github.com/nativesintech"
+                style={{ color: "#FFF" }}
               >
-                🐙 GitHub
+                <span role="img" aria-label="octopus">
+                  🐙
+                </span>{" "}
+                GitHub
               </StyledLink>
             </DotLessItem>
           </List>
@@ -235,6 +359,7 @@ export default class Presentation extends React.Component {
             src="https://media.giphy.com/media/3oriO5EMLxl1f7funu/giphy.gif"
             width="auto"
             height={400}
+            alt="David Pumpkin from SNL asking 'any questions?'"
           />
         </Slide>
       </Deck>
