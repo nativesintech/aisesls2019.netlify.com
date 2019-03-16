@@ -3,21 +3,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 // Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text,
-  Link,
-  Layout,
-  Fit,
-  Fill
-} from "spectacle";
+import { Deck, Heading, ListItem, List, Slide, Text, Link } from "spectacle";
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
@@ -69,30 +55,28 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="primary" caps margin="0 0 24px 0">
             Made with ❤️ and
           </Heading>
-          <List textAlign="center">
-            <DotLessItem>
-              <StyledLink href="https://formidable.com/open-source/spectacle/">
-                ✨ spectacle
-              </StyledLink>
-            </DotLessItem>
-            <DotLessItem>
-              <StyledLink href="https://firebase.google.com/">
-                🔥 firebase
-              </StyledLink>
-            </DotLessItem>
-            <DotLessItem>
-              <StyledLink href="https://facebook.github.io/create-react-app/">
-                👾 create-react-app
-              </StyledLink>
-            </DotLessItem>
-          </List>
+          <StyledLink
+            textSize={64}
+            href="https://formidable.com/open-source/spectacle/"
+          >
+            ✨ spectacle,{" "}
+          </StyledLink>
+          <StyledLink textSize={64} href="https://firebase.google.com/">
+            🛫 netlify,{" "}
+          </StyledLink>
+          <StyledLink
+            textSize={64}
+            href="https://facebook.github.io/create-react-app/"
+          >
+            and 🖥&nbsp;create-react-app
+          </StyledLink>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary">
             Story Time
           </Heading>
           <Text textColor="tertiary" margin="24px 0 0">
-            Who is Me? 👨🏻‍💻
+            Who is me? 👨🏻‍💻
           </Text>
         </Slide>
         <Slide>
@@ -117,6 +101,13 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading size={1}>Story Time</Heading>
           <Text margin="24px 0 0">How did I start coding? 👨🏻‍💻</Text>
+        </Slide>
+        <Slide>
+          <img
+            height={400}
+            width="auto"
+            src="https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif"
+          />
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={3} textColor="primary">
@@ -157,39 +148,51 @@ export default class Presentation extends React.Component {
             👩🏽‍💻👨🏻‍💻👩🏼‍💻👨🏾‍💻
           </Text>
         </Slide>
+        <Slide>
+          <img
+            height={400}
+            width="auto"
+            src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"
+          />
+        </Slide>
         <Slide bgColor="tertiary">
           <Heading textColor="primary">Projects</Heading>
           <List>
             <DotLessItem>
               <StyledLink href="http://obxlabs.net/olelo-programming/">
-                🍍 Writing C# in Hawaiian
+                🍍 Re-writing C# in Hawaiian
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://native-land.ca/">
-                🗺 Mapping Traditional Native Territories
+                🗺 Mapping traditional native territories
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="http://turing.iimas.unam.mx/wix/">
-                🤖 Native Language Translation using Machine Learning
+                🤖 Native language translation using machine learning
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://www.lavieencode.net/">
-                👩🏽‍🏫 Web Development Training
+                👩🏽‍🏫 Web development training
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
               <StyledLink href="https://www.amazonteam.org/terrastories/">
-                🌴 Amazonian Story Telling through Offline Maps
+                🌴 Amazonian story telling through offline maps
+              </StyledLink>
+            </DotLessItem>
+            <DotLessItem>
+              <StyledLink href="https://nativeamericanmascotdatabase.com/database/">
+                👺 Mascot database
               </StyledLink>
             </DotLessItem>
           </List>
         </Slide>
         <Slide>
           <Heading size={3} textColor="tertiary">
-            Why Open Source
+            Why Open Source?
           </Heading>
           <Text
             margin="32px 0 0"
@@ -228,7 +231,11 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide>
-          <Heading>Any Questions???</Heading>
+          <img
+            src="https://media.giphy.com/media/3oriO5EMLxl1f7funu/giphy.gif"
+            width="auto"
+            height={400}
+          />
         </Slide>
       </Deck>
     );
