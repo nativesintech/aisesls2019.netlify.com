@@ -17,7 +17,7 @@ const DotLessItem = styled(ListItem)`
 `;
 
 const StyledLink = styled(Link)`
-  color: #0f2944;
+  color: ${props => props.textColor || "secondary"};
 `;
 
 const theme = createTheme(
@@ -173,11 +173,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <DotLessItem>
-              <StyledLink
-                href="https://reactjs.org/"
-                textColor="tertiary"
-                style={{ color: "#4DD1DC" }}
-              >
+              <StyledLink href="https://reactjs.org/" textColor="tertiary">
                 <span role="img" aria-label="beach umbrella">
                   ⛱
                 </span>{" "}
@@ -188,7 +184,6 @@ export default class Presentation extends React.Component {
               <StyledLink
                 href="https://reasonml.github.io/"
                 textColor="tertiary"
-                style={{ color: "#4DD1DC" }}
               >
                 <span role="img" aria-label="puzzle piece">
                   🧩
@@ -197,11 +192,7 @@ export default class Presentation extends React.Component {
               </StyledLink>
             </DotLessItem>
             <DotLessItem>
-              <StyledLink
-                href="https://www.netlify.com/"
-                textColor="tertiary"
-                style={{ color: "#4DD1DC" }}
-              >
+              <StyledLink href="https://www.netlify.com/" textColor="tertiary">
                 <span role="img" aria-label="plane take off">
                   🛫
                 </span>{" "}
@@ -317,11 +308,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List textAlign="center">
             <DotLessItem>
-              <StyledLink
-                textColor="primary"
-                href="https://nativesintech.org/"
-                style={{ color: "#FFF" }}
-              >
+              <StyledLink textColor="primary" href="https://nativesintech.org/">
                 <span role="img" aria-label="globe">
                   🌍
                 </span>{" "}
@@ -332,7 +319,6 @@ export default class Presentation extends React.Component {
               <StyledLink
                 textColor="primary"
                 href="https://twitter.com/nativesintech"
-                style={{ color: "#FFF" }}
               >
                 <span role="img" aria-label="bird">
                   🐦
@@ -344,7 +330,6 @@ export default class Presentation extends React.Component {
               <StyledLink
                 textColor="primary"
                 href="https://github.com/nativesintech"
-                style={{ color: "#FFF" }}
               >
                 <span role="img" aria-label="octopus">
                   🐙
