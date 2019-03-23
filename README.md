@@ -1,6 +1,6 @@
 # Natives in Tech at AISESLS 2019
 
-This presentation was given at the AISESLE 2019 Conference.
+This presentation was given at the [AISESLS 2019 Conference](https://www.eiseverywhere.com/ehome/375978/801176/?date=03/17/2019).
 
 You can view the slides here: https://aisesls2019.netlify.com
 
